@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Explorar - JR Cursos</title>
+  <link rel="stylesheet" href="explorar.css" />
+</head>
+<body>
+  <header>
+    <h1>Explorar Cursos</h1>
+  </header>
+
+  <div class="carrossel-wrapper">
+    <button class="nav prev">←</button>
+    <div class="carrossel">
+      <!-- CARD 1 -->
+      <div class="curso-card">
+        <img src="marketing.png" alt="Marketing Digital"  />
+        <div class="nivel iniciante">Iniciante</div>
+        <div class="info">
+          <h2>Marketing Digital</h2>
+          <p class="tempo">4 🕒</p>
+        </div>
+        <hr />
+        <p class="descricao">Domine o Marketing Digital e Alavanque Seu Sucesso...</p>
+        <button class="play-button">▶</button>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="curso-card">
+        <img src="transdigital.png" alt="Transformação Digital" />
+        <div class="nivel intermediario">Intermediário</div>
+        <div class="info">
+          <h2>Transformação Digital</h2>
+          <p class="tempo">8 🕒</p>
+        </div>
+        <hr />
+        <p class="descricao">Domine as tecnologias e estratégias que estão revolucionando os negócios...</p>
+        <button class="play-button">▶</button>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="curso-card">
+        <img src="copilot.png" alt="Copilot by Microsoft" />
+        <div class="nivel iniciante">Iniciante</div>
+        <div class="info">
+          <h2>Copilot by Microsoft</h2>
+          <p class="tempo">9 🕒</p>
+        </div>
+        <hr />
+        <p class="descricao">Aprenda a dominar o Microsoft Copilot e revolucione a forma como você trabalha...</p>
+        <button class="play-button">▶</button>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="curso-card">
+        <img src="powerbi.png" alt="PowerBI" />
+        <div class="nivel intermediario">Intermediário</div>
+        <div class="info">
+          <h2>Introdução PowerBI</h2>
+          <p class="tempo">4 🕒</p>
+        </div>
+        <hr />
+        <p class="descricao">Aprenda a transformar informações em insights poderosos com o Power BI...</p>
+        <button class="play-button">▶</button>
+      </div>
+
+      <!-- CARD 5 -->
+      <div class="curso-card">
+        <img src="AI.png" alt="IA" />
+        <div class="nivel Avançado">Avançado</div>
+        <div class="info">
+          <h2>Aprenda a trabalhar com IA</h2>
+          <p class="tempo">4 🕒</p>
+        </div>
+        <hr />
+        <p class="descricao">Descubra os fundamentos e aplicações práticas da IA...</p>
+        <button class="play-button">▶</button>
+      </div>
+    </div>
+    <button class="nav next">→</button>
+  </div>
+
+  <footer>
+    © 2025 Projeto Integrador – Faculdade Esuda
+  </footer>
+
+  <script>
+    const carrossel = document.querySelector('.carrossel');
+    document.querySelector('.next').onclick = () => {
+      carrossel.scrollBy({ left: 320, behavior: 'smooth' });
+    };
+    document.querySelector('.prev').onclick = () => {
+      carrossel.scrollBy({ left: -320, behavior: 'smooth' });
+    };
+  </script>
+</body>
+</html>
